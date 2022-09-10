@@ -1,0 +1,108 @@
+/*codingExercise 7 Css*/
+#ce-7 
+h1 {
+    color: green;
+}
+
+#ce-7 
+h2 {
+    color: magenta;
+}
+
+#ce-7 
+p {
+    color: white;
+    background-color: black;
+}
+
+#ce-7 
+button {
+    color: red;
+    background-color: pink;
+}
+
+/*codingExercise 8*/
+#ce-8 
+h1 {
+    text-transform: uppercase;
+    font-family: monospace;
+    text-align: center;
+    font-weight: 100;
+    font-size: 40px;
+    letter-spacing: 20px;
+    text-decoration: plum underline wavy;
+}
+
+/*codingExercise 9*/
+/* Make all LI's blue */
+#ce-9 
+li {
+    color: blue;
+}
+
+/* Make everything with the class of 'done' grey*/
+#ce-9 
+.done {
+    color: grey;
+}
+
+/* Make the element with the id of 'clear' have a red BG and white text */
+#clear {
+    color: white;
+    background-color: red;
+}
+
+/*codingExercise 10*/
+#ce-10
+header a {
+    font-size: 30px;
+    color: teal;
+}
+#dislikes a {
+    font-weight: bold;
+    color: red;
+}
+
+/*codingExercise 11*/
+/* DO NOT TOUCH THIS FILE!!!  */
+.square {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+/* DO NOT TOUCH THIS FILE!!!  */
+/* THIS CODE WILL MAKE SENSE ONCE WE COVER FLEXBOX!  */
+#board {
+    display: flex;
+    margin: 0 auto;
+    width: 500px;
+    flex-wrap: wrap;
+}
+
+/* DO NOT TOUCH THIS FILE!!!  */
+/* WRITE YOUR CODE IN HERE!!!!  */
+#board div {
+    background-color: red;
+}
+
+#board div:nth-of-type(2n) {
+    background-color: black;
+}
+
+/*codingExercise 12*/
+/* YOUR CODE GOES IN HERE */
+#ce-12
+div {
+    width: 210px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    text-align: center;
+}
+#ce-12
+img {
+    width: 200px;
+    border: 5px solid rgb(236, 183, 191);
+    border-radius: 50%;
+}
