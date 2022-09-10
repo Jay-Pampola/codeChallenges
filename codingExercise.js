@@ -543,14 +543,14 @@ const returnDay = (day) => {
 //codingExercise 44
 /* Function Expression Exercise
 Define a function that returns the square of a number. Define the function as a function expression, 
-stored in a variable called square.  NOTE: Udemy's coding exercise platform does NOT support the ** operator. 
+stored in a variable called squareNums.  NOTE: Udemy's coding exercise platform does NOT support the ** operator. 
 
 square(4) //16
 square(3) //9 */
 
 //NOTE: Udemy's coding exercise platform does NOT support the ** operator.  
 //You'll need to multiply a number by itself or use the Math.pow() method.
-const square = (num) => {
+const squaredNums = (num) => {
     return Math.pow(num, 2)
 };
 
@@ -600,3 +600,84 @@ const hen = {
     }
 };
 
+//codingExercise 47
+/* Map Practice
+It's time to get practice with the map method!
+Define a variable named firstNames and assign it to the result of mapping over the existing array, fullNames, 
+so that firstNames contains only the first names of the Harry Potter characters from the fullNames array.
+e.g.,
+console.log(firstNames); // ['Albus', 'Harry', 'Hermione', 'Ron', 'Rubeus', 'Minerva', 'Severus']
+
+Please note:
+The fullNames array is an array of objects with each object containing properties for the first and last names of each character. 
+You may need to click the "Reset code" link if you do not see the fullNames array pre-loaded into the exercise's index.js file.
+This exercise has been updated, you may see Q&A threads from this lecture that relate to the original exercise which no longer exists. 
+They can be ignored. */
+
+// DO NOT ALTER THE FOLLOWING CODE:
+const fullNames = [
+    { first: 'Albus', last: 'Dumbledore' },
+    { first: 'Harry', last: 'Potter' },
+    { first: 'Hermione', last: 'Granger' },
+    { first: 'Ron', last: 'Weasley' },
+    { first: 'Rubeus', last: 'Hagrid' },
+    { first: 'Minerva', last: 'McGonagall' },
+    { first: 'Severus', last: 'Snape' }];
+
+// Write your code here
+const firstNames = fullNames.map((names) => (names.first));
+
+//codingExercise 48
+/* Arrow Function Exercise
+Write an arrow function expression called greet.  It should accept a single string argument, representing a person's name.  It should return a greeting string as shown below:
+
+greet("Hagrid") //"Hey Hagrid!" 
+greet("Luna") //"Hey Luna!"
+Be sure to use arrow function syntax! */
+
+const greet = name => (`Hey ${name}!`);
+
+//codingExercise 49
+/* Filter Exercise
+Let's get some practice using the filter method. Write a function called validUserNames that accepts an array of usernames (strings).  
+It should return a new array, containing only the usernames that are less than 10 characters. 
+For example:
+validUserNames(['mark', 'staceysmom1978', 'q29832128238983', 'carrie98', 'MoanaFan']);
+// => ["mark", "carrie98", "MoanaFan"]
+
+Note: The syntax for this solution might be a little strange to you at this point in the course because it requires you to write the code, 
+that you just learned in the previous lecture, inside of a function. e.g.,
+
+function validUserNames(usernames) {
+  // your code here
+}
+
+or if you want to get fancy with an arrow function:
+const validUserNames = usernames => // your code here;
+
+There is no need to define an actual array of usernames, that part is done for you behind the scenes.
+If you get stuck on this exercise, please see here for a quick video walkthrough.
+ */
+
+function validUserNames(usernames) {
+    // your code here
+    return usernames.filter((username) => (username.length < 10)
+    );
+};
+
+//codingExercise 50
+/* Some/Every Exercise
+Define a function called allEvens that accepts a single array of numbers.  
+If the array contains all even numbers, return true.  Otherwise, return false.  
+Use some or every to help you do this!  (only one of them is actually useful here)
+
+allEvens([2,4,6,8]) //true
+allEvens([1,4,6,8]) //false
+allEvens([1,2,3]) //false */
+
+const allEvens = nums => {
+    return nums.every((numbers) => (numbers % 2 === 0));
+};
+console.log(allEvens([2, 4, 6, 8]));
+
+//codingExercise 51
