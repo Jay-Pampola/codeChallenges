@@ -1,3 +1,5 @@
+//WorkAround Explorer
+
 const salaryData = [
     { role: 'CTO', company: 'Big Data Inc.', salary: 320000 },
     { role: 'Technical Lead', company: 'Big Data Inc.', salary: 230000 },
