@@ -1,4 +1,4 @@
-const shopForBeans = () => {
+/* const shopForBeans = () => {
     return new Promise((resolve, reject) => {
         const beanTypes = ['kidney', 'fava', 'pinto', 'black', 'garbanzo'];
         setTimeout(() => {
@@ -17,4 +17,41 @@ async function getBeans() {
 }
 
 getBeans();
-console.log("Describe what happens with this `console.log()` statement as well.");
+console.log("Describe what happens with this `console.log()` statement as well."); */
+
+function buildMassiveString() {
+    massiveString = Array(1000).fill("STRING").join();
+};
+buildMassiveString();
+
+const jin = {
+    role: "vocalist"
+};
+const suga = {
+    role: "rapper"
+};
+const jHope = {
+    role: "rapper"
+};
+const rm = {
+    role: "lead and rapper"
+};
+const jimin = {
+    role: "vocalist"
+};
+const v = {
+    role: "vocalist"
+};
+const jungkook = {
+    role: "vocalist"
+};
+
+rm.laughingBuddy = jin;
+suga.bestie = jHope;
+jungkook.partnerInCrime = v;
+v.bestie = jimin;
+//v.partnerInCrime = jungkook; <-- circular references
+
+const bts = [jin, suga, jHope, rm, jimin, v, jungkook];
+
+console.log(bts);
