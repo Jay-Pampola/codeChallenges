@@ -17,3 +17,4 @@ async function getBeans() {
 }
 
 getBeans();
+console.log("Describe what happens with this `console.log()` statement as well.");
