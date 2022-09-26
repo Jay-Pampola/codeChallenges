@@ -1,3 +1,5 @@
+// Message Mixer Super Encoder.
+
 // Import the encryptors functions here.
 const encryptors = require('./encryptors.js');
 const { caesarCipher, symbolCipher, reverseCipher } = encryptors;
