@@ -100,7 +100,7 @@ console.log(recordCollection);
 
 // Only change code below this line
 // for loop
-function countdown(n) {
+function countdown1(n) {
     if (n < 1) {
         return [];
     } else {
@@ -114,11 +114,11 @@ function countdown(n) {
 }
 // recursion
 // Only change code below this line
-function countdownRecusrive(n) {
+function countdown2(n) {
     if (n < 1) {
         return [];
     } else {
-        const countArr = countdown(n - 1);
+        const countArr = countdown2(n - 1);
         countArr.unshift(n)
         return countArr;
     }
