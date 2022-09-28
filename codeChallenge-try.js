@@ -126,3 +126,23 @@ function countdown2(n) {
 // Only change code above this line
 
 console.log(countdownRecursive(10))
+
+const rollTheDice = () => {
+    
+  // Math.random() gives us a random number from 0 up to, but not including, 1
+  // We multiplied that by 6 to get a number between 0 and up to, but not including, 6
+  // But since we actually wanted numbers from 1 to 6, inclusive, we added 1
+    const dice = (min, max) => {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min + 1)) + min
+    };
+    //console.log(dice(1,6));
+    let d1 = dice(1,6);
+    let d2 = dice(1,6)
+    
+    return d1 + d2;
+}
+
+console.log(rollTheDice());
+
