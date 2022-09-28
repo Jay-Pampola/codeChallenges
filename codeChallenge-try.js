@@ -170,3 +170,27 @@ console.log(calculateWeight(100, 'Jupiter')); // Should print 236
 // We encourage you to add more function calls of your own to test your code!
 console.log(calculateWeight(100, 'Mercury'));
 console.log(calculateWeight(100, 'Neptune'));
+
+// Write your function here:
+const howOld = (age, year) => {
+    let todayYear = 2022;
+    if (year > todayYear) {
+        let calculatedAge = (year - todayYear) + age;
+        //console.log(calculatedAge);
+        return `You will be ${calculatedAge} in the year ${year}`;
+    } else if (year < (todayYear - age)) {
+        let calculatedNumOfYrs = (todayYear - age) - year;
+        return `The year ${year} was ${calculatedNumOfYrs} years before you were born`
+    } else if (year < todayYear) {
+        let calculatedAge = age - (todayYear - year);
+        return `You were ${calculatedAge} in the year ${year}`
+    }
+}
+
+
+
+
+// Once your function is written, write function calls to test your code!
+console.log(howOld(30, 2025));
+console.log(howOld(30, 1985));
+console.log(howOld(30, 1999));
