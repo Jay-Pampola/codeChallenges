@@ -1,4 +1,4 @@
-//WorkAround Explorer
+// WorkAround Explorer
 
 // TODO: Add your import statements here.
 import { getRoles, getCompanies } from './modules/salaryData.js';

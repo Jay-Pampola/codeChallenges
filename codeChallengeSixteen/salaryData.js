@@ -1,4 +1,4 @@
-//WorkAround Explorer
+// WorkAround Explorer
 
 const salaryData = [
     { role: 'CTO', company: 'Big Data Inc.', salary: 320000 },
