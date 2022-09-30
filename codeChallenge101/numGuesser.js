@@ -1,3 +1,5 @@
+//code not mine
+
 let target;
 
 const humanGuessInput = document.getElementById('human-guess');
