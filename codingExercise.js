@@ -1,4 +1,4 @@
-console.log('Javascript Exercise (UDEMY)')
+console.log('JavaScript Exercise (UDEMY)')
 
 //codingExercise 15
 /* Our First Variables Exercise
