@@ -1,3 +1,5 @@
+// Coding Exercise 57
+
 // WRITE YOUR CODE IN HERE:
 const hiLites = document.querySelectorAll('li');
 hiLites[0].setAttribute('class', 'highlight');
