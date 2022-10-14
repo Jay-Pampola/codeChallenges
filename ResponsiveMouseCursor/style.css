@@ -24,10 +24,9 @@
     transition: background-color 0.2s, color 0.2s;
 }
 
-.button:hover {
+canvas:hover {
     cursor: pointer;
-    background-color: rgb(32, 64, 86);
-    ;
+    /*background-color: rgb(32, 64, 86); */
     color: white;
     transition: background-color 0.2s, color 0.2s;
 }
